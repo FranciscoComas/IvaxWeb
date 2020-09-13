@@ -1,0 +1,16 @@
+#Banner{
+    background-color: black;
+    width: 100%;
+    display: inline-block;
+}
+#logo{
+    float: left;
+    color: white;
+    margin-left: 10px;
+    width: 100px;
+}
+.banner_buttons{
+    float: right;
+    color: white;
+    margin-right: 10px;
+}
