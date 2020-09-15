@@ -1,0 +1,30 @@
+@font-face { font-family: navFont; src: url(../assets/fonts/KILLERBOOTS.TTF)}
+
+#navBar{
+    top: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    background-color: black;
+    font-family: navFont;
+    text-align: center;
+}
+ #logo{
+    display: inline-block;
+    width: 40%;
+ }
+ #navButtons{
+    display: inline-block;
+    width: 50%;
+ }
+ #logoImg{
+    float: left;
+    width: 100px;
+}
+.nav-item-button{
+    color:white;
+    text-decoration: none;
+    float: right;
+    margin-right: 10px;
+    margin-bottom: 5px;
+}
