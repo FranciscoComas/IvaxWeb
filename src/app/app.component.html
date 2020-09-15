@@ -1,4 +1,14 @@
-<router-outlet></router-outlet>
-<app-banner></app-banner>
-<app-mainpage></app-mainpage>
-<app-footer></app-footer>
+<div id = "navBar">
+    <div id = "logo">
+        <img id = "logoImg" src="../assets/images/logo.png" alt="logo">
+    </div>
+    <div id = "navButtons">
+        <a class = "nav-item-button" routerLink= "/">Home</a>
+        <a class = "nav-item-button" routerLink= "/songs">Songs</a>
+        <a class = "nav-item-button" routerLink= "/">Photos</a>
+        <a class = "nav-item-button" routerLink= "/">Contact</a>
+    </div>
+</div>
+<div id = "mainContent">
+    <router-outlet></router-outlet>
+</div>
