@@ -1,4 +1,4 @@
 [
-    {"id": 1, "name": "cancion1", "file_name" : "song1.jpg"},
-    {"id": 2, "name": "cancion2", "file_name" : "song2.jpg"}
+    {"id": 1, "name": "cancion1", "image_file" : "song1.jpg", "song_file" : "song1.mp3"},
+    {"id": 2, "name": "cancion2", "image_file" : "song2.jpg", "song_file" : "song2.mp3"}
 ]

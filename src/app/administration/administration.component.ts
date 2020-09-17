@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+
+import {AddSongService} from '../add-song.service';
+
 import { Song } from '../song';
 import { Photo } from '../photos';
 import { Biography } from '../biography';
@@ -13,6 +16,13 @@ import bioData from '../../assets/data/biography.json'
   styleUrls: ['./administration.component.css']
 })
 export class AdministrationComponent implements OnInit {
+
+  ngOnInit(): void { 
+
+  }
+
+  constructor(private  addSongService:AddSongService){}
+
   songs: Song [] = songsData;
   photos: Photo[] = photosData;
   biography: Biography = bioData;
@@ -72,9 +82,9 @@ export class AdministrationComponent implements OnInit {
       this.photoAdd=false;
     }
 
+    phpTest():void{
+      this.addSongService.performGetEx().subscribe();
+    }
 
-  ngOnInit(): void { 
-
-  }
 
 }

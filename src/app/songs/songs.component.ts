@@ -7,12 +7,6 @@ import { Song } from '../song';
 })
 export class SongsComponent implements OnInit {
 
-  song: Song={
-    id: 1,
-    name: "Ivax Generic song",
-    file_name: "WE DONT KNOW"
-  }
-
   constructor() { }
 
   ngOnInit(): void {
