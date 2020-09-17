@@ -1,1 +1,46 @@
 <p>administration works!</p>
+
+<button (click)="songsDivFunction()">Songs</button>
+<button (click)="photosDivFunction()">Photos</button>
+<button (click)="biographyDivFunction()">Biography</button>
+
+<div *ngIf="songsDiv">
+    <button (click)="showAddSong()"><img class = "addIcon" src="../../assets/images/add_icon.png" alt="addIcon"></button>
+    <div *ngIf="songAdd">
+        <div>
+            <span>ADD SONG!</span>
+            <button (click)="addSongFunction()">Add</button>
+            <button (click)="hideAddSongFunction()">Cancel</button>
+        </div>
+    </div>
+    <div *ngFor="let song of songs">
+        <span>ID: {{song.id}}</span>
+        <span>Name: {{song.name}}</span>
+        <span>song_file: {{song.song_file}}</span>
+        <span>image_file: {{song.image_file}}</span>
+    </div>
+</div>
+<div *ngIf="photosDiv">
+    <button (click)="showAddPhoto()"><img class = "addIcon" src="../../assets/images/add_icon.png" alt="addIcon"></button>
+    <div *ngIf="photoAdd">
+        <div>
+            <span>ADD PHOTO!</span>
+            <button (click)="addPhotoFunction()">Add</button>
+            <button (click)="hideAddPhotoFunction()">Cancel</button>
+        </div>
+    </div>
+    <div *ngFor="let photo of photos">
+        <span>ID: {{photo.id}}</span>
+        <span>Name: {{photo.name}}</span>
+        <span>File_Name: {{photo.file_name}}</span>
+    </div>
+</div>
+<div *ngIf="biographyDiv">
+    <button (click)="showAddPhoto()"><img class = "addIcon" src="../../assets/images/edit_icon.png" alt="addIcon"></button>
+    <div>
+        <span>{{biography.text}}</span>
+    </div>
+</div>
+<div>
+    <button (click)="phpTest()">PHP</button>
+</div>
