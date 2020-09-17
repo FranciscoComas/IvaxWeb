@@ -1,3 +1,3 @@
 <?php
-    console.log("patata");
+    console.log('patata');
 ?>
