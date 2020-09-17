@@ -2,4 +2,9 @@
 body{
     background-image: url("assets/images/background.jpg");
     overflow-x: hidden;
+    margin:0;
+}
+
+.margin-8{
+	margin:8px;
 }
